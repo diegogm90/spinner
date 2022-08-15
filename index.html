@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <title>Spinner Textos en Español</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">TextosSpin.club</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Espinear textos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Guía de uso</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <div class="container">
+    <div class="input-group">
+      <textarea class="form-control col-10 mt-5" id="entrada-texto" rows="15" aria-label="With textarea" placeholder='{Aquí|En este recuadro|En este campo de texto} {{puedes crear|crearás} textos {fantásticos|únicos|de gran calidad}|{serás capaz|tendrás la capacidad|tendrás la posibilidad} de {generar|redactar|obtener} {artículos|posts|textos} únicos}. Escribe tu texto en formato spintax y haz clic en "¡Empezar spin!" para generar nuevos textos a partir de tu spintax. Cada vez que hagas clic generarás un texto nuevo que puedes copiar simplemente haciendo click en "Copiar spin".'></textarea>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <button type="button" class="btn btn-success m-3 col-7" onclick="spin()">¡Empezar spin!</button>
+      <button type="button" class="btn btn-light m-3 col-3" onclick="copySpin()">Copiar spin</button>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="input-group">
+      <textarea class="form-control col-10 mt-5 m-10" id="salida-texto" rows="15" aria-label="With textarea" placeholder='Aquí aparecerá tu texto spin. Puedes generar nuevos textos volviendo a hacer clic en "Empezar Spin"'></textarea>
+    </div>
+  </div>
+
+
+</body>
+<script src="./index.js"></script>
+
+</html>
